@@ -1,0 +1,411 @@
+*{
+        box-sizing: border-box;
+}
+
+body{
+        margin: 0;
+        font-family: 'Roboto', sans-serif;
+
+}
+
+h1{font-size: 3.5em;}
+h2{font-size: 2.7em;}
+h3{font-size: 2em;}
+p{font-size: 1.25em;}
+
+html{
+        scroll-behavior: smooth;
+}
+
+button{
+    font-size: 1.5em;
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 12px;
+    border: 1px solid rgba(0,0,0,0.5);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    color: #fff;
+    background-color: rgb(92, 171, 197);
+}
+button:hover{
+        background-color: rgb(45, 144, 177);
+}
+.color-arg{
+        color: rgb(45, 144, 177);
+}
+
+.container{
+        max-width: 1200px;
+        margin: auto;
+}
+header{
+        background: rgb(245, 245, 245);
+}
+header .logo{
+        margin: 0;
+        padding: 21px 30px;
+        font-weight: bold;
+        color: rgb(92, 171, 197);
+        font-size: 1.6;
+}
+header .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+}
+header nav{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 25px;
+}
+header a{
+        padding: 5px 12px;
+        text-decoration: none;
+        font-weight: bold;
+        color: rgb(0, 64, 85);
+}
+header a:hover{
+        color: rgb(92, 171, 197);
+}
+
+#hero{
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 90vh;
+        background-image: linear-gradient(
+                0deg,
+                rgba( 0,0,0,0.5),
+                rgba( 0,0,0,0.5)
+        ) 
+        ,url(imagenes/bandera.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+}
+#hero h1{
+        color: rgb(255, 255, 255);
+}
+#hero button{
+        font-size: 1.75em;
+}
+
+#argentina .container{
+        text-align: center;
+        padding: 48px 12px;
+
+}
+#mate .container{
+        text-align: center;
+        padding: 48px 12px;
+}
+#fernet .container{
+        text-align: center;
+        padding: 48px 12px;
+}
+#jugadores-arg{
+        background-color:rgba(92, 171, 197, 0.534);
+        color: #fff;
+        text-align: center;
+}
+#jugadores-arg .container{
+        padding: 8px 12px;
+}
+#jugadores-arg h2{
+        margin-top: 0px;
+        font-size: 3em;
+}
+#jugadores-arg h2{
+        margin-top: 0;
+}
+#jugadores-arg p{
+        display: none;
+}
+#jugadores-arg .carta{
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        padding: 50px;
+        border-radius: 14px;
+        margin: 10px 30px ;
+}
+.carta:first-child{
+        background-image: linear-gradient(
+                0deg,
+                rgba( 0,0,0,0.5),
+                rgba( 0,0,0,0.5)
+        ) 
+        ,url(imagenes/messi.png);
+}
+.carta:nth-child(2){
+        background-image: linear-gradient(
+                0deg,
+                rgba( 0,0,0,0.5),
+                rgba( 0,0,0,0.5)
+        ) 
+        ,url(imagenes/dybala.png);
+}
+.carta:nth-child(3){
+        background-image: linear-gradient(
+                0deg,
+                rgba( 0,0,0,0.5),
+                rgba( 0,0,0,0.5)
+        ) 
+        ,url(imagenes/dimaria.png);
+}
+
+#fernet .container{
+        text-align: center;
+        padding: 48px 12px;
+}
+#fernet h2{
+        font-size: 3.5em;
+        
+}
+
+#mate .container{
+        text-align: center;
+        padding: 48px 12px 55px 12px;
+}
+#mate h2{
+        font-size: 3.5em;
+        
+}
+#cantantes-arg .container{
+        text-align: center;
+        padding: 8px 12px;
+
+}
+#cantantes-arg{
+        background-color:rgba(92, 171, 197, 0.534);
+        color: #fff;
+        text-align: center;
+}
+#cantantes-arg h2{
+        margin-top: 0;
+        font-size: 3em;
+}
+#cantantes-arg .carta2{
+        padding: 40px;
+}
+#cantantes-arg h2{
+        margin: 0;
+}
+#cantantes-arg p{
+        display: none;
+}
+#cantantes-arg .carta2{
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        padding: 55px;
+        border-radius: 14px;
+        margin: 10px 30px;
+}
+.carta2:nth-child(1){
+        background-image: linear-gradient(
+                0deg,
+                rgba( 0,0,0,0.5),
+                rgba( 0,0,0,0.5)
+        ) 
+        ,url(imagenes/acru.png);
+}
+.carta2:nth-child(2){
+        background-image: linear-gradient(
+                0deg,
+                rgba( 0,0,0,0.5),
+                rgba( 0,0,0,0.5)
+        ) 
+        ,url(imagenes/wos.png);
+}
+.carta2:nth-child(3){
+        background-image: linear-gradient(
+                0deg,
+                rgba( 0,0,0,0.5),
+                rgba( 0,0,0,0.5)
+        ) 
+        ,url(imagenes/duki.png);
+}
+
+#final{
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 95vh;
+        background-color: rgba(30,30,30);
+}
+#final h2{
+        color: rgb(255, 255, 255);
+        font-size: 9vw;
+}
+#final button{
+        font-size: 5vw;
+}
+
+
+footer {
+        margin: 0;
+        color: rgba(100, 100, 100);
+        font-size: 20px;
+        padding: 15px;
+}
+footer .container1{
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+
+}
+@media (min-width: 720px) {
+        header{
+                position: fixed;
+                width: 100%;
+        }
+        header .container{
+                flex-direction: row;
+                justify-content: space-between;
+        }
+        header nav{
+                flex-direction: row;
+                align-items: center;
+                padding-bottom: 0;
+        } 
+        #hero{
+                display: flex;
+                align-items: center;
+                text-align: center;
+                justify-content: center;
+                flex-direction: column;
+                height: 100vh;
+        } 
+        #hero h1{
+                font-size: 5em;
+        }
+        #argentina .container{
+                display: flex;
+                justify-content: space-evenly;
+        }
+        #argentina .texto{
+                width: 50%;
+                text-align: initial;
+                max-width: 600px;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                padding-left: 30px;
+        }
+        #argentina .img-container{
+                background-image: linear-gradient(
+                        0deg,
+                        rgba( 0,0,0,0.5),
+                        rgba( 0,0,0,0.5)
+                ) 
+                ,url(imagenes/cultura.jpg);
+                        background-size: cover;
+                        background-position: center center;
+                        height: 500px;
+                        width: 400px;
+                }
+        #argentina h2{
+                        margin-top: 0;
+                }
+        #jugadores-arg .jug{
+                display: flex;
+                justify-content: center;
+                }
+        #jugadores-arg p{
+                display: block;
+                padding-bottom: 30px;
+        }
+        #jugadores-arg h2{
+                margin: 0;
+        }
+        #jugadores-arg .carta{
+                padding: 40px;
+        }
+        #cantantes-arg .can{
+                display: flex;
+                justify-content: center;
+                }
+        #cantantes-arg p{
+                display: block;
+                padding-bottom: 30px;
+        }
+        #cantantes-arg h3{
+                margin-top: 0;
+        }
+        #cantantes-arg .carta{
+                padding: 50px;
+        }
+        #fernet .container{
+                display: flex;
+                justify-content: space-evenly;
+        }
+        #fernet .textofrn{
+                width: 50%;
+                text-align: initial;
+                max-width: 600px;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                padding-left: 30px;
+        }
+        #fernet .frn-container{
+                background-image: linear-gradient(
+                        0deg,
+                        rgba( 0,0,0,0.5),
+                        rgba( 0,0,0,0.5)
+                ) 
+                ,url(imagenes/fernet.png);
+                        background-size: cover;
+                        background-position: center center;
+                        height: 500px;
+                        width: 400px;
+                }
+        #fernet h2{
+                        margin-top: 0;
+                }
+                #mate .container{
+                        display: flex;
+                        justify-content: space-evenly;
+                }
+                #mate .textomat{
+                        width: 50%;
+                        text-align: initial;
+                        max-width: 600px;
+                        display: flex;
+                        justify-content: center;
+                        flex-direction: column;
+                        padding-left: 30px;
+                }
+                #mate .mat-container{
+                        background-image: linear-gradient(
+                                0deg,
+                                rgba( 0,0,0,0.5),
+                                rgba( 0,0,0,0.5)
+                        ) 
+                        ,url(imagenes/mate.png);
+                                background-size: cover;
+                                background-position: center center;
+                                height: 500px;
+                                width: 400px;
+                        }
+                #mate h2{
+                                margin-top: 0;
+                        }
+                        #argentina .container{
+                                border-top: .5px solid rgba(240, 240, 240);
+                        }
+                        #mate .container{
+                                border-top: .5px solid rgba(240, 240, 240);
+                        }
+                        #fernet .container{
+                                border-top: .5px solid rgba(240, 240, 240);
+                        }
+        
+}
